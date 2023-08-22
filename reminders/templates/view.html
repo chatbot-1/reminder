@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="view-rem">
+        <div class="view-input">
+            <h3>Date:</h1>
+            <h4>{{viewRem.date}}</h4>
+        </div>
+        <div class="view-input">
+            <h3>Subject:</h3>
+            <h4>{{viewRem.subject}}</h4>
+        </div>
+        <div class="view-input">
+            <h3>Description:</h3>
+            <h4>{{viewRem.description}}</h4>
+        </div>
+        <div class="view-input">
+            <h3>Email Address:</h3>
+            <h4>{{viewRem.email}}</h4>
+        </div>
+        <div class="view-input">
+            <h3>Contact number:</h3>
+            <h4>{{viewRem.contact}}</h4>
+        </div>
+        <div class="view-input">
+            <h3>SMS number:</h3>
+            <h4>{{viewRem.sms}}</h4>
+        </div>
+    </div>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block body %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="set-rem">
+        <h1>Set Your Reminder</h1>
+        <div class="set-input">
+            <label for="">Select a date</label>
+            <input required type="date" name="date">
+        </div>
+        <div class="set-input">
+            <label for="">Subject</label>
+            <input required type="text" name="subject">
+        </div>
+        <div class="set-input">
+            <label for="">Add description</label>
+            <textarea required name="description" id="" cols="30" rows="4"></textarea>
+        </div>
+        <div class="set-input">
+            <label for="">Email Adress</label>
+            <input required type="email" name="email">
+        </div>
+        <div class="set-input">
+            <label for="">Contact number</label>
+            <input required type="number" name="contact">
+        </div>
+        <div class="set-input">
+            <label for="">SMS number</label>
+            <input type="number" name="sms">
+        </div>
+        <input type="submit" value="Submit" class="btn1">
+        <input type="reset" value="Reset" class="btn2">
+    </div>
+</form>
+
+{% endblock body %}

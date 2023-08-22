@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="home">
+    <div class="small" style="text-align: center;">
+        Current datetime:{% now "jS F Y H:i" %}
+    </div>
+    <div class="set-remind">
+        <a href="{% url 'setRem' %}"><h2>Set Reminder</h2></a>
+    </div>
+    <div class="update-remind">
+        <a href="{% url 'updateRem' %}"><h2>Update Reminder</h2></a>
+    </div>
+    <div class="del-remind">
+        <a href="{% url 'deleteRem' %}"><h2>Delete Reminder</h2></a>
+    </div>
+    <div class="view-remind">
+        <a href="{% url 'viewData' %}"><h2>View Reminder</h2></a>
+    </div>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+<div class="update-data">
+    <div class="update-reminder">
+        <h1>Update Your reminder</h1>
+        <div class="provider-data">
+            <table border="2px">
+                <tr>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>SMS</th>
+                    <th>Action</th>
+                </tr>
+                {% for i in setReminder %}
+                <tr>
+                    <td>{{i.date}}</td>
+                    <td>{{i.subject}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.contact}}</td>
+                    <td>{{i.sms}}</td>
+                    <td>
+                        <a href="/update_reminder/{{i.id}}">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+    
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

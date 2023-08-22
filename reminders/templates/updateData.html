@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="set-rem">
+        <div class="set-input">
+            <label for="">Select a date</label>
+            <input required type="date" name="date" value="{{upRem.date}}">
+        </div>
+        <div class="set-input">
+            <label for="">Subject</label>
+            <input required type="text" name="subject" value="{{upRem.subject}}">
+        </div>
+        <div class="set-input">
+            <label for="">Add description</label>
+            <textarea required name="description" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="set-input">
+            <label for="">Email Adress</label>
+            <input required type="email" name="email" value="{{upRem.email}}">
+        </div>
+        <div class="set-input">
+            <label for="">Contact number</label>
+            <input required type="number" name="contact" value="{{upRem.contact}}">
+        </div>
+        <div class="set-input">
+            <label for="">SMS number</label>
+            <input required type="number" name="sms" value="{{upRem.sms}}">
+        </div>
+        <input type="submit" value="Submit" class="btn1">
+        <input type="reset" value="Reset" class="btn2">
+    </div>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.left-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head-block ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+    font-size: 18px;
+}
+.head-block ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    background-color: grey;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* width: 600px; */
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.set-rem{
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.set-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.set-input input{
+    padding: 5px 10px;
+}
+
+.set-input textarea{
+    padding: 5px 10px;
+}
+
+.update-reminder{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+}
+.view-rem{
+    border: 1px solid black;
+    padding: 20px;
+}
+.view-input{
+    display: flex;
+    border-bottom: 1px solid black;
+    gap: 50px;
+}
+.btn1{
+    background: rgb(1, 1, 102);
+    color: white;
+    cursor: pointer;
+}
+.btn2{
+    background: rgb(138, 0, 0);
+    color: white;
+    cursor: pointer;
+}
